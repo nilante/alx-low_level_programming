@@ -1,8 +1,9 @@
 #include "main.h"
 
-/**
-* print_rev -printing a string in reverse
+/*
+ *  print_rev -printing a string in reverse
 * @str: the string to be printed in rev
+* _putchar - print each character
 */
 
 void print_rev(char *str)

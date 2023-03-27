@@ -1,4 +1,5 @@
 #include "main.h"
+#include "_putchar.c"
 /**
  * rev_string - reverses a string
  * _putchar - print each character
