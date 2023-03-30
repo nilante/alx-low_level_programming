@@ -1,7 +1,7 @@
 
 #include "main.h"
 /**
- * _strcat - concatenates string2 to string1 and ends
+ * _strncat - concatenates string2 to string1 and ends
  * the resulting string with the null character
  * @dest: input value
  * @src: input value
