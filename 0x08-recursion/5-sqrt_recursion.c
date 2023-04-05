@@ -24,7 +24,7 @@ return (recursion(x + 1, y));
 
 int _sqrt_recursion(int n)
 {
-if (n < 0)
-return (-1);
-return (recursion(n, 0));
+if (n == 0)
+return (0);
+return (recursion(1,n));
 }
