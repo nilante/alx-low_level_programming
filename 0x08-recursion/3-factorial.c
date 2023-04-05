@@ -11,7 +11,7 @@ if (n < 0)
 
 return (-1);
 
-if (n == 0)
+else if (n == 0)
 return (1);
 
 /* else return the factorial function */
