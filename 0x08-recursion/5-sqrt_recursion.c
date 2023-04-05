@@ -12,8 +12,7 @@ if (x * x > y)
 return (-1);
 else if (x * x == y)
 return (x);
-z = int recursion(x + 1, y);
-return (z);
+return (recursion(x + 1, y));
 }
 /**
  * _sqrt_recursion - a function that returns the natural
