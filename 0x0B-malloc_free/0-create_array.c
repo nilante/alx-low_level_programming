@@ -3,7 +3,7 @@
 /**
  * create_array - a function that creates an array of chars
  * @size: size of array
- * @c: char 
+ * @c: char
  * Return: NULL
  */
 char *create_array(unsigned int size, char c)
