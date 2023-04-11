@@ -7,7 +7,6 @@
  * alloc_grid function
  * @grid: 2 dimensional grid
  * @height: height dimension of grid
- 
  * Return: NULL or failure
  */
 void free_grid(int **grid, int height)
