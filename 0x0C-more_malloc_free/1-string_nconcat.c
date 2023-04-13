@@ -2,44 +2,47 @@
 #include "main.h"
 
 /**
- * _memset - sets the first count bytes of dest 
- * to the value c
- * @s: the string
- * @b: char to copy
- * @n: the variable
- * Return: s
- */
-char *_memset(char *s, char b, unsigned int n)
-{
-	unsigned int i;
-
-	for (i = 0; i < n; i++)
-	{
-		s[i] = b;
-	}
-
-	return (s);
-}
-
-/**
- * _calloc - a function that allocates memory for an array,
- * @nmemb: number of elements in the array
- * @size: size of each element
+ * *string_nconcat - a function that concatenates two strings
+ * @s1: string 1
+ * @s2: string 2
+ * @n: number of bytes from s2 to concatenate to s1
  * Return: a
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+ 
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *a;
+	/**
+	 * b : string length1 ,c: string length2
+	 */
+	 unsigned int x = 0, y = 0, b = 0,  c = 0;
 
-	if (nmemb == 0 || size == 0)
+	while (s1 && s1[b])
+		b++;
+	while (s2 && s2[c])
+		c++;
+
+	if (n < c)
+		a = malloc(sizeof(char) * (b + n + 1));
+	else
+	a = malloc(sizeof(char) * (b+ c + 1));
+
+	if (!a)
 		return (NULL);
 
-    a = malloc(size * nmemb);
+	while (x < b)
+	{
+		a[x] = s1[x];
+		x++;
+	}
 
-       if (a == NULL)
-		return (NULL);
+	while (n < c && x < (b + n))
+		a[x++] = s2[y++];
 
-	_memset(a, 0, nmemb * size);
+	while (n >= c && x < (b + c))
+		a[x++] = s2[y++];
+
+a[x] = '\0';
 
 	return (a);
 }

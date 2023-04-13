@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _memset - sets the first count bytes of dest 
+ * _memset - sets the first count bytes of dest
  * to the value c
  * @s: the string
  * @b: char to copy
@@ -31,15 +31,17 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *a;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
+if (nmemb == 0 || size == 0)
 
-    a = malloc(size * nmemb);
+	return (NULL);
+
+a = malloc(size * nmemb);
 
 if (a == NULL)
+
 		return (NULL);
 
-	_memset(a, 0, nmemb * size);
+_memset(a, 0, nmemb * size);
 
 	return (a);
 }
