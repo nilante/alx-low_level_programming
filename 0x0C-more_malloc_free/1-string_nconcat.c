@@ -8,7 +8,7 @@
  * @n: number of bytes from s2 to concatenate to s1
  * Return: a
  */
- 
+
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *a;
@@ -25,7 +25,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n < c)
 		a = malloc(sizeof(char) * (b + n + 1));
 	else
-	a = malloc(sizeof(char) * (b+ c + 1));
+	a = malloc(sizeof(char) * (b + c + 1));
 
 	if (!a)
 		return (NULL);
