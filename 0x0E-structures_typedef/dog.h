@@ -11,13 +11,11 @@ struct dog
 char *name;
 float age;
 char *owner;
-};
+}
 typedef struct dog carlin;
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
-carlin *pulldog(char *name, float age, char *owner);
-void free_dog(carlin *d);
-char *_strcpy(char *dest, char *src);
-int _strlen(char *s);
+dog_t *pulldog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 #endif
