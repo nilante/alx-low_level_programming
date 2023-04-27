@@ -2,7 +2,7 @@
 #include <string.h>
 #include "lists.h"
 /**
- * add_node_end -  a function that adds a
+ * add_node_end - a function that adds a
  * new node at the end of a list_t list
  * @head:double pointer
  * @str: the string
