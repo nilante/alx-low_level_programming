@@ -1,10 +1,10 @@
 #include "lists.h"
 #include <stddef.h>
 /**
- * print_listint - a function that prints all 
+ * print_listint - a function that prints all
  * the elements of a listint_t lis
  * @h: the head
- * return: number of nodes
+ * Return: number of nodes
  */
 size_t print_listint(const listint_t *h)
 {
@@ -12,7 +12,7 @@ size_t print_listint(const listint_t *h)
 
 	while (h)
 	{
-		printf("%d\n", h->n);
+		printf("%d\n", h->next);
 		nodes++;
 		h = h->next;
 	}
