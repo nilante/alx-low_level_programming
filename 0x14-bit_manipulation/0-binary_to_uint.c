@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (x = 0; b[x]; x++)
 	{
-		if (b[x < '0' || b[x] > '1')
+		if (b[x < '0' || b[x] > '1'])
 			return (0);
 		cn = 2 * cn + (b[x] - '0');
 	}
