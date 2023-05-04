@@ -12,7 +12,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	int vob;
 	/* vob = value of the bit */
 
-	if (index > 0)
+	if (index > 65)
 		return (-1);
 
 vob = (n >> index) & 1;
