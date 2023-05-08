@@ -15,7 +15,7 @@ if (filename == NULL)
 
 if (text_content != NULL)
 {
-for (y = 0; text_content[len];)
+for (y = 0; text_content[y];)
 y++;
 }
 
